@@ -1,5 +1,6 @@
 import './App.css';
 import Employee from './Employee';
+import TodoList from './TodoList';
 
 const employeeInfo = [
   {
@@ -20,11 +21,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        { employeeInfo.map((employee)=> {
+        {/* { employeeInfo.map((employee)=> {
           return (
             <Employee key={employee.employeeId} {...employee} />
           );
-        })}
+        })} */}
+        <TodoList />
       </header>
     </div>
   );
